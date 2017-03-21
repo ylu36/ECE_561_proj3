@@ -15,7 +15,7 @@
 #include "profile.h"
 #include "region.h"
 #include "Drift_Calculation.h"
-
+#include <arm_math.h>
 #define NUM_TESTS 100
 #define MAX_MAG_ERROR 0.1
 #define MAX_ANGLE_ERROR 1.0
@@ -101,7 +101,6 @@ int main (void) {
 	__enable_irq();
 	printf("\r\n\nProject 3 Base Code\r\n");
 	Control_RGB_LEDs(1,1,0);
-
 	// Phase 2: Known test cases for profiling and optimizing Compute_Current
 	Control_RGB_LEDs(0,1,0);
 	for (t=0; t<NUM_TESTS; t++) {

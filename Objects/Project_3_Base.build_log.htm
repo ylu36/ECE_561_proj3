@@ -28,22 +28,33 @@ Project File Date:  03/17/2017
 *** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
 compiling region.c...
-compiling Drift_Calculation.c...
 compiling queue.c...
-compiling delay.c...
+compiling Drift_Calculation.c...
+Source\Drift_Calculation.c(15): warning:  #177-D: variable "rad_inv_q"  was declared but never referenced
+  	float temp, rad_inv_q, q_180;
+Source\Drift_Calculation.c(15): warning:  #177-D: variable "q_180"  was declared but never referenced
+  	float temp, rad_inv_q, q_180;
+Source\Drift_Calculation.c(16): warning:  #177-D: variable "oneenighty"  was declared but never referenced
+  	float oneenighty = 180;
+Source\Drift_Calculation.c(17): warning:  #177-D: variable "rad_inv"  was declared but never referenced
+  	float rad_inv = 57.2957795;
+Source\Drift_Calculation.c: 4 warnings, 0 errors
 compiling LEDs.c...
+compiling delay.c...
 compiling profile.c...
 assembling startup_MKL25Z4.s...
-compiling trig_approx.c...
+compiling timers.c...
 compiling UART.c...
 compiling main.c...
-compiling timers.c...
+compiling trig_approx.c...
 compiling system_MKL25Z4.c...
 linking...
-Program Size: Code=18264 RO-data=5872 RW-data=344 ZI-data=2872  
+.\Objects\Project_3_Base.axf: Warning: L6304W: Duplicate input file C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Lib\ARM\arm_cortexM0l_math.lib ignored.
+Program Size: Code=18272 RO-data=5872 RW-data=344 ZI-data=2872  
+Finished: 0 information, 1 warning and 0 error messages.
 After Build - User command #1: C:\Users\james\Downloads\ESD-master\ESD-master\Speed\Project_3_Base\Scripts\update_regions_MDK.bat
 C:\Users\james\Documents\GitHub\ECE_561_proj3>Scripts\getregions.exe Objects/*.axf -c -s -oSource/region.c 
-".\Objects\Project_3_Base.axf" - 0 Error(s), 0 Warning(s).
+".\Objects\Project_3_Base.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -52,6 +63,7 @@ Package Vendor: ARM
                 ARM::CMSIS:CORE:5.0.1
                 CMSIS (Cortex Microcontroller Software Interface Standard)
    * Component: CORE Version: 5.0.1
+   * Component: DSP Version: 1.5.1
 
 Package Vendor: Keil
                 http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.13.0.pack
@@ -69,11 +81,15 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.0.1
 
+   * Component: ARM::CMSIS:DSP:1.5.1
+      Library file:  CMSIS\Lib\ARM\arm_cortexM0l_math.lib
+      Include file:  CMSIS\Include\arm_math.h
+
    * Component: Keil::Device:Startup:2.5.0
       Source file:   Device\Source\system_MKL25Z4.c
       Include file:  Device\Source\system_MKL25Z4.h
       Source file:   Device\Source\ARM\startup_MKL25Z4.s
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

@@ -1,4 +1,10 @@
 .\objects\drift_calculation.o: Source\Drift_Calculation.c
 .\objects\drift_calculation.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\drift_calculation.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\arm_math.h
+.\objects\drift_calculation.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\core_cm0plus.h
+.\objects\drift_calculation.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drift_calculation.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_compiler.h
+.\objects\drift_calculation.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_armcc.h
+.\objects\drift_calculation.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\drift_calculation.o: .\Include\Drift_Calculation.h
 .\objects\drift_calculation.o: .\Include\trig_approx.h
