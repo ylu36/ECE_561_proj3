@@ -11,9 +11,9 @@
 
 // Math constants we'll use
 #define DP_PI (3.141592653589)	// pi
-double const twopi=2.0*DP_PI;			// pi times 2
-double const two_over_pi= 2.0/DP_PI;		// 2/pi
-double const halfpi=DP_PI/2.0;			// pi divided by 2
+float const twopi=2.0*DP_PI;			// pi times 2
+float const two_over_pi= 2.0/DP_PI;		// 2/pi
+float const halfpi=DP_PI/2.0;			// pi divided by 2
 
 double const threehalfpi=3.0*DP_PI/2.0;  		// pi times 3/2, used in tan routines
 double const four_over_pi=4.0/DP_PI;		// 4/pi, used in tan routines
