@@ -10,7 +10,7 @@
 #define FALSE 0
 
 // Math constants we'll use
-#define DP_PI (3.1415926535897932384626433)	// pi
+#define DP_PI (3.141592653589)	// pi
 double const twopi=2.0*DP_PI;			// pi times 2
 double const two_over_pi= 2.0/DP_PI;		// 2/pi
 double const halfpi=DP_PI/2.0;			// pi divided by 2
@@ -61,7 +61,7 @@ float cos_32s(float x)
 float cos_32(float x){
 	int quad;						// what quadrant are we in?
 
-	x=fmod(x, twopi);				// Get rid of values > 2* pi
+	x=fmodf(x, twopi);				// Get rid of values > 2* pi
 	if(x<0)x=-x;					// cos(-x) = cos(x)
 	quad=(int) (x * two_over_pi);			// Get quadrant # (0 to 3) we're in
 	switch (quad){
