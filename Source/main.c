@@ -15,7 +15,7 @@
 #include "profile.h"
 #include "region.h"
 #include "Drift_Calculation.h"
-#include <arm_math.h>
+//#include <arm_math.h>
 #define NUM_TESTS 100
 #define MAX_MAG_ERROR 0.1
 #define MAX_ANGLE_ERROR 1.0
@@ -100,6 +100,8 @@ int main (void) {
 	Init_UART0(115200);
 	__enable_irq();
 	printf("\r\n\nProject 3 Base Code\r\n");
+	printf("\r\n\n Name:Mohith Golla,unityid:mgolla\r\n");
+	printf("\r\n\n Name:Yuanchen Lu,unityid:ylu36\r\n");
 	Control_RGB_LEDs(1,1,0);
 	// Phase 2: Known test cases for profiling and optimizing Compute_Current
 	Control_RGB_LEDs(0,1,0);
@@ -110,7 +112,7 @@ int main (void) {
 			sog = Tests[i].BtG.magnitude;
 			trk = Tests[i].BtG.angle;
 	
-			Enable_Profiling();
+		Enable_Profiling();
 			TOGGLE_BLUE_LED
 			Compute_Current(stw, hdg, sog, trk, &cspd, &cang);
 			TOGGLE_BLUE_LED
@@ -126,8 +128,8 @@ int main (void) {
 					printf("\r\n                XXX Angle error!!! XXX");
 			}
 		}
-		print_approx_results = 0; // Don't print out approximation results for any tests after the first set
-	}
+print_approx_results = 0; // Don't print out approximation results for any tests after the first set
+}    
 	printf("\r\n");
 	Sort_Profile_Regions();
 	Print_Sorted_Profile();

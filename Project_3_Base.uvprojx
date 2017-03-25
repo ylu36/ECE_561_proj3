@@ -81,7 +81,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>C:\Users\james\Downloads\ESD-master\ESD-master\Speed\Project_3_Base\Scripts\update_regions_MDK.bat</UserProg1Name>
+            <UserProg1Name>C:\Users\james\Downloads\proj3subm\proj3subm\ECE_561_proj3-master\Scripts\update_regions_MDK.bat</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>

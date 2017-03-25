@@ -10,7 +10,7 @@
 #define FALSE 0
 
 // Math constants we'll use
-#define DP_PI (3.141592653589)	// pi
+#define DP_PI (3.141592653)	// pi
 float const twopi=2.0*DP_PI;			// pi times 2
 float const two_over_pi= 2.0/DP_PI;		// 2/pi
 float const halfpi=DP_PI/2.0;			// pi divided by 2
